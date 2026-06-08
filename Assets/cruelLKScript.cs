@@ -120,7 +120,7 @@ public class cruelLKScript : MonoBehaviour
 	{
 		int ans = initKey;
 		for (int i = 0; i <= amountOfRotations; i++)
-			initKey = transformationWZYX(rotations[i % 32], initKey);
+			ans = transformationWZYX(rotations[i % 32], ans);
 		return ans;
 	}
 	
